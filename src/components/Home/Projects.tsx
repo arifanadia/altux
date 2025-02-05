@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section className="container mx-auto w-full px-6">
+    <section id="projects" className="container mx-auto w-full px-6">
       <div>
         <h2 className="section-heading text-3xl font-semibold mb-8">
           Projects

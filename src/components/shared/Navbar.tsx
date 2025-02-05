@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Icons for open/close menu
 import CustomBtn from "../ui/CustomBtn";
 import ModalCall from "../ModalCall";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full bg-gradient-to-r from-black via-accent to-black fixed  top-0 z-50 h-20">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container mx-auto flex items-center justify-between px-6 py-6">
         <div className="flex gap-2 items-center">
           {/* Mobile Menu Button */}
           <button
@@ -28,19 +29,21 @@ const Navbar = () => {
             {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
           {/* Logo */}
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={300}
-            height={300}
-            className="w-[150px] lg:w-[200px]"
-          />
+          <Link href={'/'}>
+            <Image
+              src="/images/altuxstudio.svg"
+              alt="logo"
+              width={300}
+              height={300}
+              className="w-[150px] lg:w-[200px]"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.id}
               href={item.href}
               className={`text-white font-medium relative group ${
@@ -55,15 +58,15 @@ const Navbar = () => {
                   activeLink === item.id || "group-hover:scale-x-100"
                 }`}
               ></span>
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div>
-            <CustomBtn title="Book a call" onClick={() => setBookCall(true)}/>
-        
+          <CustomBtn title="Get Started" onClick={() => setBookCall(true)} />
+
           {/* Modal */}
-        <ModalCall bookCall={bookCall} setBookCall={setBookCall} />
+          <ModalCall bookCall={bookCall} setBookCall={setBookCall} />
         </div>
       </div>
 

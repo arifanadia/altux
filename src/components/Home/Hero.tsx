@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className=" py-28 px-6">
       <div>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold md:leading-tight  lg:leading-tight xl:leading-snug">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-bold md:leading-tight  lg:leading-tight xl:leading-snug">
           A Dedicated Team for <br />{" "}
           <span className="text-primary">
             <Typewriter
@@ -31,7 +31,7 @@ const Hero = () => {
           brands to life in the digital world.
         </p>
         <div>
-            <CustomBtn title="Book a call" onClick={() => setBookCall(true)}/>
+            <CustomBtn title="Get Started" onClick={() => setBookCall(true)}/>
         
           {/* Modal */}
         <ModalCall bookCall={bookCall} setBookCall={setBookCall} />

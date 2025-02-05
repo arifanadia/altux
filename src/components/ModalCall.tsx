@@ -21,7 +21,7 @@ const ModalCall = ({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-accent bg-opacity-50 backdrop-blur-sm">
-      <div className="p-6 rounded-xl w-full md:w-3/4 xl:w-[50%] bg-black h-[600px] ">
+      <div className="p-6 rounded-xl w-full md:w-3/4 xl:w-[50%] bg-black h-[600px] mt-12">
         {/* Close Button */}
         <div className="flex justify-end p-6">
           <button

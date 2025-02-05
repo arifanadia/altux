@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { Head } from "next/document";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
   description:
     "Crafting modern web experiences with cutting-edge development, UI/UX design, and innovative coding solutions.",
   icons: {
-    icon: "/altuxstudio.jpg", // Fallback favicon
-    shortcut: "/altux.jpg", // Shortcut icon
+    icon: "/images/altux.jpg", // Fallback favicon
+    shortcut: "/images/altux.jpg", // Shortcut icon
   },
 };
 
@@ -32,11 +33,18 @@ export default function RootLayout({
       className=" scrollbar-thin h-4 scrollbar-thumb-primary scrollbar-track-gray-700 scroll-smooth"
     >
       <head>
-        <link rel="icon" type="image/jpg" href="/altux.jpg" sizes="32x32" className="object-cover w-full" />
+        <link
+          rel="icon"
+          type="image/jpg"
+          href="/images/altux.jpg"
+          sizes="32x32"
+          className="object-cover w-full"
+        />
       </head>
       <body
         className={`${instrumentSans.variable} antialiased bg-black text-white`}
       >
+        <CustomCursor />
         <Navbar />
         <div className="min-h-screen">{children}</div>
         <Footer />

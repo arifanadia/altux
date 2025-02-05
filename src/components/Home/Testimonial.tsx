@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <section className="w-full mx-auto mt-20  xl:p-16 container px-6 ">
+    <section className="w-full mx-auto mt-20 py-12 xl:p-16 container px-6 ">
       <h2 className="section-heading text-center">Hear From our Customers</h2>
       <div className="relative w-full overflow-hidden mt-24 px-4 sm:px-6 lg:px-8">
         <Swiper

@@ -13,6 +13,24 @@ body {
   }
 }
 @layer utilities {
+  /* customCursor */
+  .cursor{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: white;
+    
+  }
+  .follow-cursor{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: fixed;
+    background-color: transparent;
+    z-index: 999;
+  }
   .section-heading {
     @apply font-bold text-3xl md:text-4xl xl:text-5xl capitalize;
   }
@@ -26,5 +44,15 @@ body {
 
   .swiper .swiper-pagination-bullet-active {
     background-color: #70FE0E;
+  }
+  /* footer */
+  .social-icon-bg{
+    @apply bg-white rounded-full p-3
+  }
+  .social-icon{
+    @apply size-6
+  }
+  .footer-link{
+    @apply hover:text-primary transition-colors duration-300
   }
 }

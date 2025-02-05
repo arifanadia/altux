@@ -1,5 +1,5 @@
 export const navItems = [
-  { id: 1, label: "Home", href: "#home" },
+  { id: 1, label: "Home", href: "/" },
   { id: 2, label: "About", href: "#about" },
   { id: 3, label: "Services", href: "#services" },
   { id: 4, label: "Projects", href: "#projects" },
@@ -81,7 +81,7 @@ export const servicesData = [
 export const testimonialData = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Abdullah Rahman",
     designation: "CEO, TechCorp",
     image: "/images/review1.jpg",
     feedback:
@@ -90,24 +90,24 @@ export const testimonialData = [
   {
     id: 2,
     name: "Sarah Smith",
-    designation: "Marketing Head, Creative Solutions",
+    designation: "Marketing Head, TrendHive ",
     image: "/images/review2.jpg",
     feedback:
       "Fantastic experience! The attention to detail and creativity in web development was outstanding. Highly recommend their services.",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "Founder, InnovateX",
-    image: "/images/review2.jpg",
+    name: "Benjamin Carter ",
+     designation: "Product Manager, Visionary Labs",
+    image: "/images/review3.png",
     feedback:
       "Altux Studio provided excellent support and built an intuitive platform for us. The process was smooth, and the results were impressive!",
   },
   {
     id: 4,
-    name: "Michael Johnson",
+    name: "Daniel Parker",
     designation: "Founder, InnovateX",
-    image: "/images/review3.jpg",
+    image: "/images/review4.jpg",
     feedback:
       "Altux Studio provided excellent support and built an intuitive platform for us. The process was smooth, and the results were impressive!",
   },
