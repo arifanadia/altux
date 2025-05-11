@@ -3,8 +3,8 @@ import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import { Head } from "next/document";
 import CustomCursor from "@/components/ui/CustomCursor";
+import MetaPixel from "@/components/shared/MetaPixel";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -44,6 +44,7 @@ export default function RootLayout({
       <body
         className={`${instrumentSans.variable} antialiased bg-black text-white`}
       >
+        <MetaPixel />
         <CustomCursor />
         <Navbar />
         <div className="min-h-screen">{children}</div>
