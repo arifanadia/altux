@@ -5,6 +5,8 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
 import MetaPixel from "@/components/shared/MetaPixel";
+import { Toaster } from "sonner";
+import Providers from "@/Provider/providers";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -47,7 +49,10 @@ export default function RootLayout({
         <MetaPixel />
         <CustomCursor />
         <Navbar />
-        <div className="min-h-screen">{children}</div>
+        <Providers>
+          <div className="min-h-screen">{children}</div>
+        </Providers>
+        <Toaster />
         <Footer />
       </body>
     </html>
